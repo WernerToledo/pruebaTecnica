@@ -9,7 +9,7 @@ CREATE TABLE usuarios (
     fechanacimiento DATE NOT NULL, 
     direccion text,
     password VARCHAR(120) NOT NULL,
-    telefono VARCHAR(9) NOT NULL,
+    telefono VARCHAR(9) NOT NULL UNIQUE,
     email VARCHAR NOT NULL,
     fechacreacion TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
     fechamodificacion TIMESTAMP
@@ -19,21 +19,5 @@ CREATE TABLE usuarios (
     )
 );
 
-INSERT INTO usuarios (
-    nombres, 
-    apellidos, 
-    fechanacimiento, 
-    direccion, 
-    password, 
-    telefono, 
-    email
-) VALUES (
-    'Juan', 
-    'Pérez', 
-    '1990-05-15', 
-    'Calle Falsa 123', 
-    '123', 
-    '1234-5678', 
-    'juan.perez@example.com'
-);
+
 

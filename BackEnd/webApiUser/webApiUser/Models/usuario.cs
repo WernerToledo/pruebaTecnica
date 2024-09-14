@@ -26,11 +26,13 @@ namespace webApiUser.Models
 
         [Required]
         [MaxLength(9)]
+       
         [RegularExpression(@"^\d{4}-\d{4}$", ErrorMessage = "El teléfono debe estar en el formato ####-####.")]
         public string telefono { get; set; }
 
         [Required]
         [EmailAddress(ErrorMessage = "Formato de correo electrónico inválido.")]
         public string email { get; set; }
+
     }
 }

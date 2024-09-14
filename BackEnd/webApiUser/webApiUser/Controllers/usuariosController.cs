@@ -1,7 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Security.Permissions;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
@@ -28,7 +30,9 @@ namespace webApiUser.Controllers
             return Ok(usuarios);
         }
 
+
         [HttpGet("{id}")]
+        [Authorize]
         public async Task<ActionResult<usuario>> GetUsuario(int id)
         {
             var usuario = await _usuarioService.GetUsuarioByIdAsync(id);
@@ -40,6 +44,7 @@ namespace webApiUser.Controllers
         }
 
         [HttpPost]
+        [Authorize]
         public async Task<ActionResult> CreateUsuario([FromBody] usuario usuario)
         {
             var id = await _usuarioService.AddUsuarioAsync(usuario);
@@ -47,6 +52,7 @@ namespace webApiUser.Controllers
         }
 
         [HttpPut("{id}")]
+        [Authorize]
         public async Task<IActionResult> UpdateUsuario(int id, [FromBody] usuario usuario)
         {
             usuario.id = id;
@@ -55,6 +61,7 @@ namespace webApiUser.Controllers
         }
 
         [HttpDelete("{id}")]
+        [Authorize]
         public async Task<IActionResult> DeleteUsuario(int id)
         {
             await _usuarioService.DeleteUsuarioAsync(id);

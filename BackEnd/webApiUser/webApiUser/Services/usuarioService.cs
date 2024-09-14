@@ -35,6 +35,8 @@ namespace webApiUser.Services
 
         public async Task<int> AddUsuarioAsync(usuario usuario)
         {
+            var hashedPassword = BCrypt.Net.BCrypt.HashPassword(usuario.password);
+            usuario.password = hashedPassword;
             using (var dbConnection = Connection)
             {
                 var sql = @"
@@ -58,6 +60,9 @@ namespace webApiUser.Services
         public async Task UpdateUsuarioAsync(usuario usuario)
         {
             DateTime fechamodificacion = DateTime.Now;
+
+            var hashedPassword = BCrypt.Net.BCrypt.HashPassword(usuario.password);
+            usuario.password = hashedPassword;
 
             using (var dbConnection = Connection)
             {
