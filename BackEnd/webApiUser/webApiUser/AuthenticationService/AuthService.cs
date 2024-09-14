@@ -13,43 +13,52 @@ namespace webApiUser.AuthenticationService
 {
     public class AuthService
     {
+        // Cadena de conexión a la base de datos y configuración del JWT
         private readonly string _connectionString;
         private readonly IConfiguration _configuration;
 
+        // Constructor que recibe la configuración a través de la inyección de dependencias
         public AuthService(IConfiguration configuration)
         {
             _connectionString = configuration.GetConnectionString("PostgresSQLConnection");
             _configuration = configuration;
         }
 
+        // Propiedad para obtener la conexión a la base de datos
         private IDbConnection Connection => new NpgsqlConnection(_connectionString);
 
+        // Método para manejar el login del usuario
         public async Task<AuthResponse> Login(Auth autenticacion)
         {
             using (var dbConnection = Connection)
             {
-                // Buscar al usuario por teléfono
+                // Buscar al usuario en la base de datos por teléfono
                 var user = await dbConnection.QuerySingleOrDefaultAsync<usuario>(
                     "SELECT * FROM usuarios WHERE telefono = @Telefono", new { Telefono = autenticacion.telefono });
 
-                // Verificar si el usuario existe y si la contraseña es válida
+                // Verificar si el usuario existe y si la contraseña es correcta
                 if (user == null || !BCrypt.Net.BCrypt.Verify(autenticacion.password, user.password))
                 {
+                    // Lanzar una excepción de autenticación si las credenciales son incorrectas
                     throw new AuthenticationException("Invalid phone number or password.");
                 }
 
-                // Generar el token JWT
+                // Generar un token JWT para el usuario
                 var token = GenerateJwtToken(user);
 
+                // Obtener los claims del token generado
                 var UserTokenData = GetTokenClaims(token);
                 if (UserTokenData == null)
                 {
+                    // Lanzar una excepción si el token no es válido
                     throw new AuthenticationException("Invalid token.");
                 }
 
+                // Extraer los claims del token
                 var claims = UserTokenData.Claims;
                 var usuarioResponse = new userClaims
                 {
+                    // Mapear los claims a un objeto userClaims
                     Id = Convert.ToInt32(claims.FirstOrDefault(c => c.Type == ClaimTypes.NameIdentifier)?.Value),
                     Nombres = claims.FirstOrDefault(c => c.Type == ClaimTypes.Name)?.Value.Split(' ')[0],
                     Apellidos = claims.FirstOrDefault(c => c.Type == "apellidos")?.Value,
@@ -61,8 +70,7 @@ namespace webApiUser.AuthenticationService
                     Direccion = claims.FirstOrDefault(c => c.Type == ClaimTypes.StreetAddress)?.Value
                 };
 
-
-                // Crear una respuesta de autenticación
+                // Crear una respuesta de autenticación con el token y los detalles del usuario
                 var response = new AuthResponse
                 {
                     User = usuarioResponse,
@@ -70,15 +78,17 @@ namespace webApiUser.AuthenticationService
                     TokenType = "Bearer"
                 };
 
-                return response; // Retornar la respuesta con el token y los detalles del usuario
+                return response;
             }
         }
 
-
+        // Método para generar un token JWT para el usuario
         private string GenerateJwtToken(usuario user)
         {
+            // Obtener la clave de firma del token desde la configuración
             var key = Encoding.ASCII.GetBytes(_configuration["Jwt:Key"]);
 
+            // Definir los claims del token
             var claims = new[]
             {
                 new Claim(ClaimTypes.NameIdentifier, user.id.ToString()),
@@ -92,6 +102,7 @@ namespace webApiUser.AuthenticationService
                 new Claim(ClaimTypes.StreetAddress, user.direccion)
             };
 
+            // Configurar los detalles del token
             var tokenDescriptor = new SecurityTokenDescriptor
             {
                 Subject = new ClaimsIdentity(claims),
@@ -101,16 +112,19 @@ namespace webApiUser.AuthenticationService
                 SigningCredentials = new SigningCredentials(new SymmetricSecurityKey(key), SecurityAlgorithms.HmacSha256Signature)
             };
 
+            // Crear el token
             var tokenHandler = new JwtSecurityTokenHandler();
             var token = tokenHandler.CreateToken(tokenDescriptor);
             return tokenHandler.WriteToken(token);
         }
 
+        // Método para obtener los claims del token JWT
         public ClaimsPrincipal GetTokenClaims(string token)
         {
             var tokenHandler = new JwtSecurityTokenHandler();
             var key = Encoding.ASCII.GetBytes(_configuration["Jwt:Key"]);
 
+            // Configurar los parámetros de validación del token
             var validationParameters = new TokenValidationParameters
             {
                 ValidateIssuer = true,
@@ -124,15 +138,15 @@ namespace webApiUser.AuthenticationService
 
             try
             {
+                // Validar el token y obtener los claims
                 var principal = tokenHandler.ValidateToken(token, validationParameters, out var securityToken);
                 return principal;
             }
             catch
             {
-                // Handle validation failure
+                // Manejar la falla de validación
                 return null;
             }
         }
-
     }
 }

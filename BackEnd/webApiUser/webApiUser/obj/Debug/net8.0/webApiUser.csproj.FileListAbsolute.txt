@@ -237,8 +237,10 @@ C:\Users\ale12\OneDrive\Escritorio\pruebatecnica\BackEnd\webApiUser\webApiUser\b
 C:\Users\ale12\OneDrive\Escritorio\pruebatecnica\BackEnd\webApiUser\webApiUser\bin\Debug\net8.0\webApiUser.runtimeconfig.json
 C:\Users\ale12\OneDrive\Escritorio\pruebatecnica\BackEnd\webApiUser\webApiUser\bin\Debug\net8.0\webApiUser.dll
 C:\Users\ale12\OneDrive\Escritorio\pruebatecnica\BackEnd\webApiUser\webApiUser\bin\Debug\net8.0\webApiUser.pdb
+C:\Users\ale12\OneDrive\Escritorio\pruebatecnica\BackEnd\webApiUser\webApiUser\bin\Debug\net8.0\BCrypt.Net-Next.dll
 C:\Users\ale12\OneDrive\Escritorio\pruebatecnica\BackEnd\webApiUser\webApiUser\bin\Debug\net8.0\Dapper.dll
 C:\Users\ale12\OneDrive\Escritorio\pruebatecnica\BackEnd\webApiUser\webApiUser\bin\Debug\net8.0\Humanizer.dll
+C:\Users\ale12\OneDrive\Escritorio\pruebatecnica\BackEnd\webApiUser\webApiUser\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
 C:\Users\ale12\OneDrive\Escritorio\pruebatecnica\BackEnd\webApiUser\webApiUser\bin\Debug\net8.0\Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.dll
 C:\Users\ale12\OneDrive\Escritorio\pruebatecnica\BackEnd\webApiUser\webApiUser\bin\Debug\net8.0\Microsoft.AspNetCore.Razor.Language.dll
 C:\Users\ale12\OneDrive\Escritorio\pruebatecnica\BackEnd\webApiUser\webApiUser\bin\Debug\net8.0\Microsoft.Bcl.AsyncInterfaces.dll
@@ -258,9 +260,14 @@ C:\Users\ale12\OneDrive\Escritorio\pruebatecnica\BackEnd\webApiUser\webApiUser\b
 C:\Users\ale12\OneDrive\Escritorio\pruebatecnica\BackEnd\webApiUser\webApiUser\bin\Debug\net8.0\Microsoft.DotNet.Scaffolding.Shared.dll
 C:\Users\ale12\OneDrive\Escritorio\pruebatecnica\BackEnd\webApiUser\webApiUser\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.dll
 C:\Users\ale12\OneDrive\Escritorio\pruebatecnica\BackEnd\webApiUser\webApiUser\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Abstractions.dll
-C:\Users\ale12\OneDrive\Escritorio\pruebatecnica\BackEnd\webApiUser\webApiUser\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Design.dll
 C:\Users\ale12\OneDrive\Escritorio\pruebatecnica\BackEnd\webApiUser\webApiUser\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Relational.dll
 C:\Users\ale12\OneDrive\Escritorio\pruebatecnica\BackEnd\webApiUser\webApiUser\bin\Debug\net8.0\Microsoft.Extensions.DependencyModel.dll
+C:\Users\ale12\OneDrive\Escritorio\pruebatecnica\BackEnd\webApiUser\webApiUser\bin\Debug\net8.0\Microsoft.IdentityModel.Abstractions.dll
+C:\Users\ale12\OneDrive\Escritorio\pruebatecnica\BackEnd\webApiUser\webApiUser\bin\Debug\net8.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\ale12\OneDrive\Escritorio\pruebatecnica\BackEnd\webApiUser\webApiUser\bin\Debug\net8.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\ale12\OneDrive\Escritorio\pruebatecnica\BackEnd\webApiUser\webApiUser\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.dll
+C:\Users\ale12\OneDrive\Escritorio\pruebatecnica\BackEnd\webApiUser\webApiUser\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\ale12\OneDrive\Escritorio\pruebatecnica\BackEnd\webApiUser\webApiUser\bin\Debug\net8.0\Microsoft.IdentityModel.Tokens.dll
 C:\Users\ale12\OneDrive\Escritorio\pruebatecnica\BackEnd\webApiUser\webApiUser\bin\Debug\net8.0\Microsoft.NET.StringTools.dll
 C:\Users\ale12\OneDrive\Escritorio\pruebatecnica\BackEnd\webApiUser\webApiUser\bin\Debug\net8.0\Microsoft.OpenApi.dll
 C:\Users\ale12\OneDrive\Escritorio\pruebatecnica\BackEnd\webApiUser\webApiUser\bin\Debug\net8.0\Microsoft.VisualStudio.Web.CodeGeneration.dll
@@ -294,6 +301,7 @@ C:\Users\ale12\OneDrive\Escritorio\pruebatecnica\BackEnd\webApiUser\webApiUser\b
 C:\Users\ale12\OneDrive\Escritorio\pruebatecnica\BackEnd\webApiUser\webApiUser\bin\Debug\net8.0\System.Composition.TypedParts.dll
 C:\Users\ale12\OneDrive\Escritorio\pruebatecnica\BackEnd\webApiUser\webApiUser\bin\Debug\net8.0\System.Configuration.ConfigurationManager.dll
 C:\Users\ale12\OneDrive\Escritorio\pruebatecnica\BackEnd\webApiUser\webApiUser\bin\Debug\net8.0\System.Drawing.Common.dll
+C:\Users\ale12\OneDrive\Escritorio\pruebatecnica\BackEnd\webApiUser\webApiUser\bin\Debug\net8.0\System.IdentityModel.Tokens.Jwt.dll
 C:\Users\ale12\OneDrive\Escritorio\pruebatecnica\BackEnd\webApiUser\webApiUser\bin\Debug\net8.0\System.Reflection.MetadataLoadContext.dll
 C:\Users\ale12\OneDrive\Escritorio\pruebatecnica\BackEnd\webApiUser\webApiUser\bin\Debug\net8.0\System.Security.Cryptography.ProtectedData.dll
 C:\Users\ale12\OneDrive\Escritorio\pruebatecnica\BackEnd\webApiUser\webApiUser\bin\Debug\net8.0\System.Security.Permissions.dll
@@ -448,6 +456,7 @@ C:\Users\ale12\OneDrive\Escritorio\pruebatecnica\BackEnd\webApiUser\webApiUser\o
 C:\Users\ale12\OneDrive\Escritorio\pruebatecnica\BackEnd\webApiUser\webApiUser\obj\Debug\net8.0\webApiUser.csproj.CoreCompileInputs.cache
 C:\Users\ale12\OneDrive\Escritorio\pruebatecnica\BackEnd\webApiUser\webApiUser\obj\Debug\net8.0\webApiUser.MvcApplicationPartsAssemblyInfo.cs
 C:\Users\ale12\OneDrive\Escritorio\pruebatecnica\BackEnd\webApiUser\webApiUser\obj\Debug\net8.0\webApiUser.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\ale12\OneDrive\Escritorio\pruebatecnica\BackEnd\webApiUser\webApiUser\obj\Debug\net8.0\webApiUser.sourcelink.json
 C:\Users\ale12\OneDrive\Escritorio\pruebatecnica\BackEnd\webApiUser\webApiUser\obj\Debug\net8.0\staticwebassets.build.json
 C:\Users\ale12\OneDrive\Escritorio\pruebatecnica\BackEnd\webApiUser\webApiUser\obj\Debug\net8.0\staticwebassets.development.json
 C:\Users\ale12\OneDrive\Escritorio\pruebatecnica\BackEnd\webApiUser\webApiUser\obj\Debug\net8.0\staticwebassets\msbuild.webApiUser.Microsoft.AspNetCore.StaticWebAssets.props
@@ -462,13 +471,3 @@ C:\Users\ale12\OneDrive\Escritorio\pruebatecnica\BackEnd\webApiUser\webApiUser\o
 C:\Users\ale12\OneDrive\Escritorio\pruebatecnica\BackEnd\webApiUser\webApiUser\obj\Debug\net8.0\webApiUser.pdb
 C:\Users\ale12\OneDrive\Escritorio\pruebatecnica\BackEnd\webApiUser\webApiUser\obj\Debug\net8.0\webApiUser.genruntimeconfig.cache
 C:\Users\ale12\OneDrive\Escritorio\pruebatecnica\BackEnd\webApiUser\webApiUser\obj\Debug\net8.0\ref\webApiUser.dll
-C:\Users\ale12\OneDrive\Escritorio\pruebatecnica\BackEnd\webApiUser\webApiUser\obj\Debug\net8.0\webApiUser.sourcelink.json
-C:\Users\ale12\OneDrive\Escritorio\pruebatecnica\BackEnd\webApiUser\webApiUser\bin\Debug\net8.0\BCrypt.Net-Next.dll
-C:\Users\ale12\OneDrive\Escritorio\pruebatecnica\BackEnd\webApiUser\webApiUser\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
-C:\Users\ale12\OneDrive\Escritorio\pruebatecnica\BackEnd\webApiUser\webApiUser\bin\Debug\net8.0\Microsoft.IdentityModel.Abstractions.dll
-C:\Users\ale12\OneDrive\Escritorio\pruebatecnica\BackEnd\webApiUser\webApiUser\bin\Debug\net8.0\Microsoft.IdentityModel.JsonWebTokens.dll
-C:\Users\ale12\OneDrive\Escritorio\pruebatecnica\BackEnd\webApiUser\webApiUser\bin\Debug\net8.0\Microsoft.IdentityModel.Logging.dll
-C:\Users\ale12\OneDrive\Escritorio\pruebatecnica\BackEnd\webApiUser\webApiUser\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.dll
-C:\Users\ale12\OneDrive\Escritorio\pruebatecnica\BackEnd\webApiUser\webApiUser\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
-C:\Users\ale12\OneDrive\Escritorio\pruebatecnica\BackEnd\webApiUser\webApiUser\bin\Debug\net8.0\Microsoft.IdentityModel.Tokens.dll
-C:\Users\ale12\OneDrive\Escritorio\pruebatecnica\BackEnd\webApiUser\webApiUser\bin\Debug\net8.0\System.IdentityModel.Tokens.Jwt.dll

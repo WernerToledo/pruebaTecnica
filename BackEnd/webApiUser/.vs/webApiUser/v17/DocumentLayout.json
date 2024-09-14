@@ -5,42 +5,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{C738CEDF-C41B-4B0A-9471-C080446F3AC6}|webApiUser\\webApiUser.csproj|c:\\users\\ale12\\onedrive\\escritorio\\pruebatecnica\\backend\\webapiuser\\webapiuser\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{C738CEDF-C41B-4B0A-9471-C080446F3AC6}|webApiUser\\webApiUser.csproj|solutionrelative:webapiuser\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C738CEDF-C41B-4B0A-9471-C080446F3AC6}|webApiUser\\webApiUser.csproj|c:\\users\\ale12\\onedrive\\escritorio\\pruebatecnica\\backend\\webapiuser\\webapiuser\\controllers\\usuarioscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C738CEDF-C41B-4B0A-9471-C080446F3AC6}|webApiUser\\webApiUser.csproj|solutionrelative:webapiuser\\controllers\\usuarioscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C738CEDF-C41B-4B0A-9471-C080446F3AC6}|webApiUser\\webApiUser.csproj|c:\\users\\ale12\\onedrive\\escritorio\\pruebatecnica\\backend\\webapiuser\\webapiuser\\services\\usuarioservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C738CEDF-C41B-4B0A-9471-C080446F3AC6}|webApiUser\\webApiUser.csproj|solutionrelative:webapiuser\\services\\usuarioservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C738CEDF-C41B-4B0A-9471-C080446F3AC6}|webApiUser\\webApiUser.csproj|c:\\users\\ale12\\onedrive\\escritorio\\pruebatecnica\\backend\\webapiuser\\webapiuser\\authenticationservice\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C738CEDF-C41B-4B0A-9471-C080446F3AC6}|webApiUser\\webApiUser.csproj|solutionrelative:webapiuser\\authenticationservice\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C738CEDF-C41B-4B0A-9471-C080446F3AC6}|webApiUser\\webApiUser.csproj|c:\\users\\ale12\\onedrive\\escritorio\\pruebatecnica\\backend\\webapiuser\\webapiuser\\models\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C738CEDF-C41B-4B0A-9471-C080446F3AC6}|webApiUser\\webApiUser.csproj|solutionrelative:webapiuser\\models\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C738CEDF-C41B-4B0A-9471-C080446F3AC6}|webApiUser\\webApiUser.csproj|c:\\users\\ale12\\onedrive\\escritorio\\pruebatecnica\\backend\\webapiuser\\webapiuser\\models\\userclaims.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C738CEDF-C41B-4B0A-9471-C080446F3AC6}|webApiUser\\webApiUser.csproj|solutionrelative:webapiuser\\models\\userclaims.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C738CEDF-C41B-4B0A-9471-C080446F3AC6}|webApiUser\\webApiUser.csproj|c:\\users\\ale12\\onedrive\\escritorio\\pruebatecnica\\backend\\webapiuser\\webapiuser\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C738CEDF-C41B-4B0A-9471-C080446F3AC6}|webApiUser\\webApiUser.csproj|solutionrelative:webapiuser\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C738CEDF-C41B-4B0A-9471-C080446F3AC6}|webApiUser\\webApiUser.csproj|c:\\users\\ale12\\onedrive\\escritorio\\pruebatecnica\\backend\\webapiuser\\webapiuser\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C738CEDF-C41B-4B0A-9471-C080446F3AC6}|webApiUser\\webApiUser.csproj|solutionrelative:webapiuser\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C738CEDF-C41B-4B0A-9471-C080446F3AC6}|webApiUser\\webApiUser.csproj|c:\\users\\ale12\\onedrive\\escritorio\\pruebatecnica\\backend\\webapiuser\\webapiuser\\models\\authresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C738CEDF-C41B-4B0A-9471-C080446F3AC6}|webApiUser\\webApiUser.csproj|solutionrelative:webapiuser\\models\\authresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C738CEDF-C41B-4B0A-9471-C080446F3AC6}|webApiUser\\webApiUser.csproj|c:\\users\\ale12\\onedrive\\escritorio\\pruebatecnica\\backend\\webapiuser\\webapiuser\\models\\auth.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C738CEDF-C41B-4B0A-9471-C080446F3AC6}|webApiUser\\webApiUser.csproj|solutionrelative:webapiuser\\models\\auth.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -50,60 +14,8 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 0,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "AuthService.cs",
-              "DocumentMoniker": "C:\\Users\\ale12\\OneDrive\\Escritorio\\pruebaTecnica\\BackEnd\\webApiUser\\webApiUser\\AuthenticationService\\AuthService.cs",
-              "RelativeDocumentMoniker": "webApiUser\\AuthenticationService\\AuthService.cs",
-              "ToolTip": "C:\\Users\\ale12\\OneDrive\\Escritorio\\pruebaTecnica\\BackEnd\\webApiUser\\webApiUser\\AuthenticationService\\AuthService.cs",
-              "RelativeToolTip": "webApiUser\\AuthenticationService\\AuthService.cs",
-              "ViewState": "AgIAABoAAAAAAAAAAAAswCsAAAAhAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-14T01:34:15.675Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "usuario.cs",
-              "DocumentMoniker": "C:\\Users\\ale12\\OneDrive\\Escritorio\\pruebaTecnica\\BackEnd\\webApiUser\\webApiUser\\Models\\usuario.cs",
-              "RelativeDocumentMoniker": "webApiUser\\Models\\usuario.cs",
-              "ToolTip": "C:\\Users\\ale12\\OneDrive\\Escritorio\\pruebaTecnica\\BackEnd\\webApiUser\\webApiUser\\Models\\usuario.cs",
-              "RelativeToolTip": "webApiUser\\Models\\usuario.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-14T01:25:42.139Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "Auth.cs",
-              "DocumentMoniker": "C:\\Users\\ale12\\OneDrive\\Escritorio\\pruebaTecnica\\BackEnd\\webApiUser\\webApiUser\\Models\\Auth.cs",
-              "RelativeDocumentMoniker": "webApiUser\\Models\\Auth.cs",
-              "ToolTip": "C:\\Users\\ale12\\OneDrive\\Escritorio\\pruebaTecnica\\BackEnd\\webApiUser\\webApiUser\\Models\\Auth.cs",
-              "RelativeToolTip": "webApiUser\\Models\\Auth.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-14T01:23:52.978Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\ale12\\OneDrive\\Escritorio\\pruebaTecnica\\BackEnd\\webApiUser\\webApiUser\\Program.cs",
-              "RelativeDocumentMoniker": "webApiUser\\Program.cs",
-              "ToolTip": "C:\\Users\\ale12\\OneDrive\\Escritorio\\pruebaTecnica\\BackEnd\\webApiUser\\webApiUser\\Program.cs",
-              "RelativeToolTip": "webApiUser\\Program.cs",
-              "ViewState": "AgIAABQAAAAAAAAAAAAowCoAAAAqAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-13T21:16:17.525Z",
-              "EditorCaption": ""
-            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
@@ -112,74 +24,9 @@
               "RelativeDocumentMoniker": "webApiUser\\appsettings.json",
               "ToolTip": "C:\\Users\\ale12\\OneDrive\\Escritorio\\pruebaTecnica\\BackEnd\\webApiUser\\webApiUser\\appsettings.json",
               "RelativeToolTip": "webApiUser\\appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABIAAAADAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-09-13T21:55:16.332Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "usuariosController.cs",
-              "DocumentMoniker": "C:\\Users\\ale12\\OneDrive\\Escritorio\\pruebaTecnica\\BackEnd\\webApiUser\\webApiUser\\Controllers\\usuariosController.cs",
-              "RelativeDocumentMoniker": "webApiUser\\Controllers\\usuariosController.cs",
-              "ToolTip": "C:\\Users\\ale12\\OneDrive\\Escritorio\\pruebaTecnica\\BackEnd\\webApiUser\\webApiUser\\Controllers\\usuariosController.cs",
-              "RelativeToolTip": "webApiUser\\Controllers\\usuariosController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAADIAAAAiAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-14T03:31:58.442Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "userClaims.cs",
-              "DocumentMoniker": "C:\\Users\\ale12\\OneDrive\\Escritorio\\pruebaTecnica\\BackEnd\\webApiUser\\webApiUser\\Models\\userClaims.cs",
-              "RelativeDocumentMoniker": "webApiUser\\Models\\userClaims.cs",
-              "ToolTip": "C:\\Users\\ale12\\OneDrive\\Escritorio\\pruebaTecnica\\BackEnd\\webApiUser\\webApiUser\\Models\\userClaims.cs",
-              "RelativeToolTip": "webApiUser\\Models\\userClaims.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAUAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-14T03:42:10.528Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "usuarioService.cs",
-              "DocumentMoniker": "C:\\Users\\ale12\\OneDrive\\Escritorio\\pruebaTecnica\\BackEnd\\webApiUser\\webApiUser\\Services\\usuarioService.cs",
-              "RelativeDocumentMoniker": "webApiUser\\Services\\usuarioService.cs",
-              "ToolTip": "C:\\Users\\ale12\\OneDrive\\Escritorio\\pruebaTecnica\\BackEnd\\webApiUser\\webApiUser\\Services\\usuarioService.cs",
-              "RelativeToolTip": "webApiUser\\Services\\usuarioService.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAABgAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-14T01:34:22.313Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "AuthResponse.cs",
-              "DocumentMoniker": "C:\\Users\\ale12\\OneDrive\\Escritorio\\pruebaTecnica\\BackEnd\\webApiUser\\webApiUser\\Models\\AuthResponse.cs",
-              "RelativeDocumentMoniker": "webApiUser\\Models\\AuthResponse.cs",
-              "ToolTip": "C:\\Users\\ale12\\OneDrive\\Escritorio\\pruebaTecnica\\BackEnd\\webApiUser\\webApiUser\\Models\\AuthResponse.cs",
-              "RelativeToolTip": "webApiUser\\Models\\AuthResponse.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAZAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-14T01:32:45.242Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "AuthController.cs",
-              "DocumentMoniker": "C:\\Users\\ale12\\OneDrive\\Escritorio\\pruebaTecnica\\BackEnd\\webApiUser\\webApiUser\\Controllers\\AuthController.cs",
-              "RelativeDocumentMoniker": "webApiUser\\Controllers\\AuthController.cs",
-              "ToolTip": "C:\\Users\\ale12\\OneDrive\\Escritorio\\pruebaTecnica\\BackEnd\\webApiUser\\webApiUser\\Controllers\\AuthController.cs",
-              "RelativeToolTip": "webApiUser\\Controllers\\AuthController.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAAAoAAAAsAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-14T03:31:19.896Z",
+              "WhenOpened": "2024-09-14T19:29:03.791Z",
               "EditorCaption": ""
             }
           ]

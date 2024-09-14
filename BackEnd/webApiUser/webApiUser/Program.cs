@@ -13,34 +13,35 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
-//dependencias
-//configuracion de servicios
-builder.Services.AddControllers();
-builder.Services.AddEndpointsApiExplorer();
-builder.Services.AddSwaggerGen();
 
-builder.Services.AddSingleton<usuarioService>();
+// Configuración de servicios para la aplicación
+builder.Services.AddControllers(); // Añade servicios necesarios para los controladores de API
+
+builder.Services.AddEndpointsApiExplorer(); // Añade servicios necesarios para explorar los endpoints de la API
+builder.Services.AddSwaggerGen(); // Añade servicios para generar la documentación Swagger
+
+builder.Services.AddSingleton<usuarioService>(); // Registra usuarioService como un singleton (una sola instancia)
 
 builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme).AddJwtBearer(options =>
 {
-        var key = Encoding.ASCII.GetBytes(builder.Configuration["Jwt:Key"]);
-        options.TokenValidationParameters = new Microsoft.IdentityModel.Tokens.TokenValidationParameters
-        {
-            ValidateIssuer = true,
-            ValidateAudience = true,
-            ValidateLifetime = true,
-            ValidateIssuerSigningKey = true,
-            ValidIssuer = builder.Configuration["Jwt:Issuer"],
-            ValidAudience = builder.Configuration["Jwt:Audience"],
-            IssuerSigningKey = new SymmetricSecurityKey(key)
-        };
-    }
-);
+    var key = Encoding.ASCII.GetBytes(builder.Configuration["Jwt:Key"]); // Obtiene la clave de JWT desde la configuración
+    options.TokenValidationParameters = new Microsoft.IdentityModel.Tokens.TokenValidationParameters
+    {
+        ValidateIssuer = true, // Valida el emisor del token
+        ValidateAudience = true, // Valida el receptor del token
+        ValidateLifetime = true, // Valida la fecha de expiración del token
+        ValidateIssuerSigningKey = true, // Valida la clave de firma del token
+        ValidIssuer = builder.Configuration["Jwt:Issuer"], // Emisor esperado del token
+        ValidAudience = builder.Configuration["Jwt:Audience"], // Receptor esperado del token
+        IssuerSigningKey = new SymmetricSecurityKey(key) // Clave de firma del token
+    };
+});
+
 // Configuración de autorización
-builder.Services.AddAuthorization();
+builder.Services.AddAuthorization(); // Añade servicios necesarios para la autorización
 
+builder.Services.AddScoped<AuthService>(); // Registra AuthService con un tiempo de vida Scoped (una instancia por solicitud HTTP)
 
-builder.Services.AddScoped<AuthService>();
 
 var app = builder.Build();
 
