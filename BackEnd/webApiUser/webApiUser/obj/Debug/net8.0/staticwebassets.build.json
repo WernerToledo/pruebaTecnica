@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "M2xulLXtccLiVUMii9hH7yMXWs+kjDi66d39GQ2EDco=",
+  "Source": "webApiUser",
+  "BasePath": "_content/webApiUser",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
