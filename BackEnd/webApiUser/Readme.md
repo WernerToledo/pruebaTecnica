@@ -1,97 +1,127 @@
-# WebApiUser
+# Documentación del Proyecto API de Gestión de Usuarios
 
-API para gestionar los usuarios de ABANK. En esta API se esta manejando las operaciones CRUD, las cuales buscan administrar
-de manera eficiente los datos de los usuarios.
+## Descripción del Proyecto
 
-## instalacion
-Para instalar y configurar el proyecto, sigue estos pasos:
+Este proyecto es una API REST construida con .NET 8, diseñada para la gestión de usuarios. La API permite realizar operaciones CRUD (Crear, Leer, Actualizar, Eliminar) sobre una tabla de usuarios. En algunos casos la las rutas tienes seguridad. La base de datos utilizada es PostgreSQL, que se maneja mediante contenedores Docker.
 
-### Requisitos Previos
+## Tecnologías y Herramientas Utilizadas
 
-Asegúrate de tener los siguientes componentes instalados:
+### .NET 8
 
-- [PostgreSQL](https://www.postgresql.org/download/)
-- [VisualStudio](https://visualstudio.microsoft.com/)   
+.NET 8 es el framework principal utilizado para desarrollar la API. Para instalar .NET 8, se ha utilizado Visual Studio.
 
-### Instalación de PostgreSQL
+**Instalación en Visual Studio:**
+1. **Descargar Visual Studio:**
+   - Visita [la página oficial de Visual Studio](https://visualstudio.microsoft.com/) y descarga el instalador.
+2. **Instalar:**
+   - Ejecuta el instalador y selecciona el componente **.NET desktop development** y **ASP.NET and web development**.
+   - Completa la instalación siguiendo las instrucciones en pantalla.
+3. **Verificar Instalación:**
+   - Abre Visual Studio y verifica que se pueda crear un proyecto de .NET 8.
 
-1. **Descargar PostgreSQL**
+### Docker
 
-   Ve a la [página de descarga de PostgreSQL](https://www.postgresql.org/download/) y elige la versión adecuada para tu sistema operativo.
+Docker se utiliza para contenerizar PostgreSQL y facilitar el despliegue de la base de datos.
 
-2. **Instalar PostgreSQL**
+**Instalación:**
+1. **Descargar Docker Desktop:**
+   - Visita [la página oficial de Docker](https://www.docker.com/products/docker-desktop) y descarga Docker Desktop.
+2. **Instalar:**
+   - Ejecuta el instalador descargado y sigue las instrucciones en pantalla.
+3. **Verificar Instalación:**
+   - Abre una terminal y ejecuta `docker --version` para verificar que Docker está correctamente instalado.
 
-   Sigue las instrucciones del instalador. Durante el proceso de instalación, toma nota de los siguientes detalles:
-   - **Puerto** (por defecto: `5432`)
-   - **Nombre de usuario** (por defecto: `postgres`)
-   - **Contraseña** (establece una contraseña segura) en mi caso fue `123`
+4. **Extensiones de .NET Core Utilizadas:**
+   - **BCrypt.Net-Next**: Para la gestión segura de contraseñas mediante hashing.
+   - **Microsoft.AspNetCore.Authentication.JwtBearer**: Para la autenticación basada en JSON Web Tokens (JWT).
+   - **Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore**: Para el diagnóstico y manejo de errores de Entity Framework Core.
+   - **Microsoft.EntityFrameworkCore**: ORM utilizado para interactuar con la base de datos PostgreSQL.
+   - **Microsoft.VisualStudio.Web.CodeGeneration.Design**: Herramienta para la generación de código en proyectos ASP.NET Core.
+   - **Npgsql**: Proveedor de datos para PostgreSQL en .NET.
+   - **Swashbuckle.AspNetCore**: Para generar documentación Swagger de la API.
+   - **System.IdentityModel.Tokens.Jwt**: Para el manejo y validación de tokens JWT.
 
-3. **Crear la base de datos**
-     
-    -Abre una terminal o consola y usa el siguiente comando para crear una base de datos:
+### Endpoints:
+**POST /api/v1/auth/login/login**
 
-        ```bash
-        psql -U postgres -c "CREATE DATABASE bdpruebatecnica;"
-
-    - **Crear la tabla `usuarios`**:
-
-     Conéctate a la base de datos y ejecuta el siguiente script SQL para crear la tabla `usuarios` o buscalo en la carpeta de base de datos:
-
-     ```sql
-     CREATE TABLE usuarios (
-         id SERIAL PRIMARY KEY,
-         nombres VARCHAR NOT NULL,
-         apellidos VARCHAR NOT NULL,
-         fechanacimiento DATE NOT NULL,
-         direccion TEXT,
-         password VARCHAR(120) NOT NULL,
-         telefono VARCHAR(9) NOT NULL,
-         email VARCHAR NOT NULL,
-         fechacreacion TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
-         fechamodificacion TIMESTAMP,
-         CONSTRAINT telefono_valido CHECK (telefono ~ '^\d{4}-\d{4}$'),
-         CONSTRAINT email_valido CHECK (
-             email ~* '^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$'
-         )
-     );
-     ```
-
-4. **Insertar datos en la tabla `usuarios`**:
-
-     Ejecuta el siguiente comando SQL para insertar un registro en la tabla `usuarios`:
-
-     ```sql
-     INSERT INTO usuarios (
-         nombres, 
-         apellidos, 
-         fechanacimiento, 
-         direccion, 
-         password, 
-         telefono, 
-         email
-     ) VALUES (
-         'Juan', 
-         'Pérez', 
-         '1990-05-15', 
-         'Calle Falsa 123', 
-         '123', 
-         '1234-5678', 
-         'juan.perez@example.com'
-     );
-     ```
-5.
+- **Descripción:** Maneja la solicitud de login para autenticar un usuario y generar un token.
+- **Autenticación Requerida:** No (este endpoint es utilizado para autenticar y obtener un token).
+- **Cuerpo de la Solicitud:**
+  ```json
+  {
+    "telefono": "####-####",
+    "password": "contraseña_hash"
+  }
 
 
-5. **Clonar el Repositorio**
-   
-   Clona el repositorio usando el siguiente comando:
-   
-   ```bash
-  https://github.com/WernerToledo/pruebaTecnica.git
+- **POST /api/v1/usuarios**
+  - **Descripción:** Crea un nuevo usuario en la base de datos.
+  - **Autenticación Requerida:** Sí (se requiere autenticación para crear un usuario)
+  - **Cuerpo de la Solicitud:**
+    ```json
+    {
+        "nombres": "string",
+        "apellidos": "string",
+        "fechanacimiento": "2024-09-14T20:00:12.318Z",
+        "direccion": "string",
+        "password": "string",
+        "telefono": "0170-1892",
+        "email": "user@example.com",
+    }
+    ```
+  - **Respuesta Exitosa:**
+    - **Código de Estado:** 201 Created
+    - **Ubicación del Nuevo Recurso:** `Location: /api/v1/usuarios/{id}`
 
-6. **Instala las dependencias**
-    instala las dependencias usando el siguiente comando o buscalas con el la ayuda de la visual Studio en el NuGet
-    -dotnet add package Dapper
-    -dotnet add package Npgsql
+- **GET /api/v1/usuarios**
+  - **Descripción:** Recupera una lista de todos los usuarios.
+  - **Autenticación Requerida:** No
+  - **Respuesta Exitosa:**
+    - **Código de Estado:** 200 OK
+    - **Cuerpo:** Lista de objetos `usuario` en formato JSON.
 
+- **GET /api/v1/usuarios/{id}**
+  - **Descripción:** Recupera un usuario específico por su ID.
+  - **Autenticación Requerida:** Sí (se requiere autenticación para acceder a un usuario específico)
+  - **Parámetros de Ruta:**
+    - `id` (int): ID del usuario a recuperar.
+  - **Respuesta Exitosa:**
+    - **Código de Estado:** 200 OK
+    - **Cuerpo:** Objeto `usuario` en formato JSON.
+  - **Respuesta si no se encuentra el Usuario:**
+    - **Código de Estado:** 404 Not Found
 
+- **PUT /api/v1/usuarios/{id}**
+  - **Descripción:** Actualiza la información de un usuario existente por su ID.
+  - **Autenticación Requerida:** Sí (se requiere autenticación para actualizar un usuario)
+  - **Parámetros de Ruta:**
+    - `id` (int): ID del usuario a actualizar.
+  - **Cuerpo de la Solicitud:**
+    ```json
+    {
+        "nombres": "string",
+        "apellidos": "string",
+        "fechanacimiento": "2024-09-14T20:00:12.318Z",
+        "direccion": "string",
+        "password": "string",
+        "telefono": "0170-1892",
+        "email": "user@example.com"
+    }
+    ```
+  - **Respuesta Exitosa:**
+    - **Código de Estado:** 204 No Content
+
+- **DELETE /api/v1/usuarios/{id}**
+  - **Descripción:** Elimina un usuario específico por su ID.
+  - **Autenticación Requerida:** Sí (se requiere autenticación para eliminar un usuario)
+  - **Parámetros de Ruta:**
+    - `id` (int): ID del usuario a eliminar.
+  - **Respuesta Exitosa:**
+    - **Código de Estado:** 204 No Content
+
+### Explicación de docker-compose.yml
+  -docker-compose.yml es un archivo que sirve para tener el entorno de la base de datos en postgres este se encargara de instalar una imagen de la base de datos para tener el servicio.
+  
+  **Usar el servicio**
+  1.**Abre la terminar de windows y corre el siguiente comando**
+      **docker-compose up**
